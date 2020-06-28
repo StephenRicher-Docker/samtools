@@ -39,7 +39,7 @@ RUN apk update && apk add --no-cache \
       make \
       libc-dev \
       bzip2-dev \
-      zlib \
+      zlib-dev \
       libbz2 \
       xz-dev \
       libcurl \
@@ -54,7 +54,7 @@ RUN cd /tmp/* && \
 FROM alpine:3.9
 
 RUN apk update && apk add --no-cache \
-      zlib \
+      zlib-dev \
       libbz2 \
       xz-dev \
       libcurl \
