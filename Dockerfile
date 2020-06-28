@@ -44,7 +44,7 @@ RUN apk update && apk add --no-cache \
       xz-dev \
       libcurl \
       ncurses-dev
-RUN cd * && \
+RUN cd /tmp/* && \
     ./configure --prefix=/usr/local/ && \
     make -j4 && \
     make install
